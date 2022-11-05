@@ -1,108 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classic Random Goal (CRG)</title>
-
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3 id="choice" hidden>index</h3>
     <div class="container">
-        <div class="flex-container">
-            <div class="ligue1">
-                <img src="assets/ligue1.png" alt="" width="300">
+        <div class="score">
+            <div>
+                <img src="assets/img/ligue1.png" alt="" class="ligue1">
             </div>
-    
-            <div class="flex-container-score">
+
+            <div class="score-status">
                 <div>
-                    <img src="assets/om.png" alt="" width="60" height="70">
+                    <img src="assets/img/om.png" alt="" class="om">
                 </div>
-                
+
                 <div>
                     <h1>OM</h1>
                 </div>
-    
+
                 <div>
-                    <h1 style="color: #CDFB0A;"><span id="om">0</span> - <span id="psg">0</span></h1>
+                    <h1 style="color: #CDFB0A;">0 - 0</h1>
                 </div>
-    
+
                 <div>
                     <h1>PSG</h1>
                 </div>
-    
+
                 <div>
-                    <img src="assets/psg.png" alt="" width="80" height="80">
+                    <img src="assets/img/psg.png" alt="" class="psg">
                 </div>
             </div>
-    
-            <div class="timer">
-                <h2 id="timer"><span id="minutes">00</span>:<span id="secondes">00</span></h2>
-            </div>
+
+            <div class="score-timer">01:36</div>
         </div>
-    
+
         <div class="circle">
+            <div class="circle-center">
+            </div>
             
-        </div>
-
-        <div class="sign">
-            <div class="sign-om">
-                <div>
-                    <img src="assets/om.png" alt="" width="60" height="70">
-                </div>
-                <div>
-                    <h3>Olympique de Marseille</h3>
-                </div>
+            <div class="circle-ball">
+                <img src="assets/img/ballon.png" alt="" class="ball">
             </div>
 
-            <div class="sign-trophy">
-                <div>
-                    <img src="assets/trophet.png" alt="" width="70" height="70">
-                </div>
-                <div>
-                    <img src="assets/trophet.png" alt="" width="70" height="70">
-                </div>
-                <div>
-                    <img src="assets/trophet.png" alt="" width="70" height="70">
-                </div>
-                <div>
-                    <h1>+8</h1>
-                </div>
-            </div>
-
-            <div class="sign-psg">
-                <div>
-                    <img src="assets/psg.png" alt="" width="80" height="80">
-                </div>
-                <div>
-                    <h3>Paris Saint Germain</h3>
-                </div>
-            </div>
-
-            <div class="sign-trophy-psg">
-                <div>
-                    <img src="assets/trophet.png" alt="" width="70" height="70">
-                </div>
+            <div class="circle-random">
+                <span>Random</span>
+                <h1>10</h1>
             </div>
         </div>
+
+        <div class="trophy">
+            <div class="trophy-trophy">
+                <div class="tr-tr-om">
+                    <div>
+                        <img src="assets/img/om.png" alt="" class="om">
+                    </div>
+                    <div>
+                        <h2>Olympique de Marseille</h2>
+                    </div>
+                </div>
+
+                <div class="tr-tr-om-tr">
+                    <div>
+                        <img src="assets/img/trophet.png" alt="" class="img-tr">
+                    </div>
+                    <div>
+                        <img src="assets/img/trophet.png" alt="" class="img-tr">
+                    </div>
+                    <div>
+                        <img src="assets/img/trophet.png" alt="" class="img-tr">
+                    </div>
+                    <div>
+                        <h1 style="color: #CDFB0A;">+8</h1>
+                    </div>
+                </div>
+
+                <div class="tr-tr-psg">
+                    <div>
+                        <img src="assets/img/psg.png" alt="" class="psg">
+                    </div>
+                    <div>
+                        <h2>Paris Saint Germain</h2>
+                    </div>
+                </div>
+
+                <div class="tr-tr-psg-tr">
+                    <div>
+                        <img src="assets/img/trophet.png" alt="" class="img-tr">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    <div class="ball">
-        <div id="ball" onclick="goal()">
-            <img src="assets/ballon.png" alt="" width="80" height="80">
-        </div>
-        <div>
-            <h3>Random</h3>
-        </div>
-        <div>
-            <h1 id="gauge"></h1>
-        </div>
-    </div>
-
-    <script src="assets/script/script.js"></script>
 </body>
 </html>
