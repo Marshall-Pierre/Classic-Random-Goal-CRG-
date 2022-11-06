@@ -29,7 +29,7 @@
                 </div>
 
                 <div>
-                    <h1 style="color: #CDFB0A;">0 - 0</h1>
+                    <h1 style="color: #CDFB0A;"><span id="om">0</span> - <span id="psg">0</span></h1>
                 </div>
 
                 <div>
@@ -41,7 +41,9 @@
                 </div>
             </div>
 
-            <div class="score-timer">01:36</div>
+            <div class="score-timer">
+                <span id="minutes">00</span>:<span id="secondes">00</span>
+            </div>
         </div>
 
         <div class="circle">
@@ -49,12 +51,12 @@
             </div>
             
             <div class="circle-ball">
-                <img src="assets/img/ballon.png" alt="" class="ball">
+                <img src="assets/img/ballon.png" alt="" class="ball" onclick="goal()">
             </div>
 
             <div class="circle-random">
                 <span>Random</span>
-                <h1>10</h1>
+                <h1 id="pull_gauge"></h1>
             </div>
         </div>
 
@@ -103,5 +105,8 @@
 
 
     </div>
+
+
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
